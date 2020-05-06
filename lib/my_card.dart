@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MyCard extends StatelessWidget {
   @override
@@ -21,6 +22,10 @@ class MyCard extends StatelessWidget {
             Text(
               "Jorge A Peroza M",
               style: Theme.of(context).textTheme.headline5,
+            ),
+            Text(
+              "Android / Flutter Developer",
+              style: Theme.of(context).textTheme.headline6,
             ),
           ],
         ),
