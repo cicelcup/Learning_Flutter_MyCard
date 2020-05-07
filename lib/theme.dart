@@ -7,7 +7,7 @@ ThemeData appTheme() {
 
   return ThemeData(
     primaryColor: Colors.indigo,
-    canvasColor: Colors.indigoAccent.shade100,
+    canvasColor: Colors.indigoAccent,
     accentColor: _accentColor,
     textTheme: TextTheme(
       headline4: GoogleFonts.gloriaHallelujah(
@@ -23,10 +23,12 @@ ThemeData appTheme() {
           fontWeight: FontWeight.bold,
         ),
       ),
-    ),
-    iconTheme: IconThemeData(
-      color: Colors.indigo[900],
-      size: 32.0,
+      subtitle1: GoogleFonts.roboto(
+        textStyle: TextStyle(
+            color: _accentColor,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 1.5),
+      ),
     ),
   );
 }

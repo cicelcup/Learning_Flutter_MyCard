@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class MyCard extends StatelessWidget {
   @override
@@ -12,6 +11,7 @@ class MyCard extends StatelessWidget {
       ),
       body: SafeArea(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             CircleAvatar(
               backgroundImage: AssetImage(
@@ -26,6 +26,13 @@ class MyCard extends StatelessWidget {
             Text(
               "Android / Flutter Developer",
               style: Theme.of(context).textTheme.headline6,
+            ),
+            SizedBox(
+              height: 32.0,
+              width: 250,
+              child: Divider(
+                color: Colors.amber[300],
+              ),
             ),
             InformationWidget(
               iconType: Icons.phone,
@@ -54,22 +61,16 @@ class InformationWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.white,
-      padding: EdgeInsets.all(8.0),
-      margin: EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0),
-      child: Row(
-        children: <Widget>[
-          Icon(iconType),
-          SizedBox(
-            width: 16.0,
+    return Card(
+        margin: EdgeInsets.symmetric(horizontal: 25.0, vertical: 8.0),
+        child: ListTile(
+          leading: Icon(
+            iconType,
+            color: Theme.of(context).primaryColor,
           ),
-          Text(
+          title: Text(
             information,
-            style: Theme.of(context).textTheme.subtitle1,
           ),
-        ],
-      ),
-    );
+        ));
   }
 }
