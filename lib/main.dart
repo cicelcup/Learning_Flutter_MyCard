@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'my_card.dart';
 import 'my_first_card.dart';
+import 'my_second_card.dart';
 import 'theme.dart';
 
 void main() {
-  runApp(MyFirstCard());
+  runApp(MySecondCard());
 }
 
 class MyApp extends StatelessWidget {
