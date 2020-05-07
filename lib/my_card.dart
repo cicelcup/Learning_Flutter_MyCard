@@ -42,6 +42,14 @@ class MyCard extends StatelessWidget {
               iconType: Icons.email,
               information: "cicelcup@hotmail.com",
             ),
+            InformationWidget(
+              iconType: Icons.home,
+              information: "Terrazas del Norte",
+            ),
+            InformationWidget(
+              iconType: Icons.work,
+              information: "Freelance",
+            ),
           ],
         ),
       ),
