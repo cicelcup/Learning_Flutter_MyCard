@@ -3,18 +3,18 @@ import 'package:google_fonts/google_fonts.dart';
 //override some properties in the theme
 
 ThemeData appTheme() {
-  const _primaryColor = Colors.indigo;
   const _accentColor = Colors.amber;
 
   return ThemeData(
-    primaryColor: _primaryColor,
+    primaryColor: Colors.indigo,
+    canvasColor: Colors.indigoAccent.shade100,
     accentColor: _accentColor,
     textTheme: TextTheme(
-      headline5: GoogleFonts.gloriaHallelujah(
+      headline4: GoogleFonts.gloriaHallelujah(
         textStyle: TextStyle(
-          color: _primaryColor,
+          color: Colors.indigo[900],
           fontWeight: FontWeight.bold,
-          letterSpacing: 4.0,
+          letterSpacing: 1.0,
         ),
       ),
       headline6: GoogleFonts.raleway(
@@ -23,6 +23,10 @@ ThemeData appTheme() {
           fontWeight: FontWeight.bold,
         ),
       ),
+    ),
+    iconTheme: IconThemeData(
+      color: Colors.indigo[900],
+      size: 32.0,
     ),
   );
 }
