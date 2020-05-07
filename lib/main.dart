@@ -5,7 +5,7 @@ import 'my_second_card.dart';
 import 'theme.dart';
 
 void main() {
-  runApp(MySecondCard());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
