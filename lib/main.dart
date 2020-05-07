@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'my_card.dart';
+import 'my_first_card.dart';
 import 'theme.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MyFirstCard());
 }
 
 class MyApp extends StatelessWidget {
